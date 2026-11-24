@@ -1,0 +1,335 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #142850, #27496d);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #0f3460;
+    padding: 15px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd369;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ff9800;
+    outline-offset: 3px;
+}
+
+/* MAIN CONTENT */
+
+main {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+section {
+    background-color: white;
+    margin: 25px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    scroll-margin-top: 20px;
+}
+
+h2 {
+    color: #142850;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #27496d;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #0f3460;
+    margin-bottom: 10px;
+}
+
+/* WELCOME SECTION */
+
+.welcome {
+    text-align: center;
+    background-color: #e8f0fe;
+}
+
+.welcome p {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #142850;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #27496d;
+}
+
+/* EVENT CARDS */
+
+.event-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: #f4f7fc;
+    padding: 22px;
+    border-radius: 8px;
+    flex: 1 1 220px;
+    border-left: 4px solid #27496d;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.date {
+    color: #d35400;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ASIDE SECTION */
+
+aside {
+    background-color: #fff3cd;
+    border-left: 5px solid #e0a800;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 8px;
+}
+
+aside h2 {
+    color: #856404;
+}
+
+aside ul {
+    padding-left: 25px;
+}
+
+/* REGISTRATION FORM */
+
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #142850;
+    padding: 0 5px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.choice label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.choice input {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+/* BUTTONS */
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    background-color: #142850;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #27496d;
+}
+
+.reset-btn {
+    background-color: #777;
+}
+
+.reset-btn:hover {
+    background-color: #555;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #142850;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .event-container {
+        flex-direction: column;
+    }
+
+    .form-buttons {
+        flex-wrap: wrap;
+    }
+}
+/* ACCESSIBILITY – IMPROVED COLOR CONTRAST */
+
+body {
+    color: #222222;
+}
+
+.welcome {
+    color: #142850;
+}
+
+.event-card {
+    color: #222222;
+}
+
+.date {
+    color: #8a2e00;
+}
+
+aside {
+    color: #493800;
+}
+
+aside h2 {
+    color: #493800;
+}
+
+nav a:hover {
+    color: #ffffff;
+}

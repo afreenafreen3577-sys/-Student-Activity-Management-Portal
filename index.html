@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="University Student Activity Management Portal to explore events and register for activities.">
+
+    <meta name="author" content="University Student Portal">
+
+    <title>Student Activity Management Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>University Activity Portal</h1>
+            <p>Explore Events | Participate | Grow</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Main Navigation">
+        <div class="container nav-links">
+            <a href="#home">Home</a>
+            <a href="#events">Upcoming Events</a>
+            <a href="#activities">Activities</a>
+            <a href="#register">Register</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="welcome">
+            <h2>Welcome Students!</h2>
+
+            <p>
+                Welcome to the University Student Activity Management Portal.
+                Discover exciting events, participate in university activities
+                and showcase your talents.
+            </p>
+
+            <a href="#events" class="button">Explore Events</a>
+        </section>
+
+        <!-- EVENTS SECTION -->
+        <section id="events">
+
+            <h2>Upcoming Events</h2>
+
+            <div class="event-container">
+
+                <article class="event-card">
+                    <h3>Technical Symposium</h3>
+                    <p class="date">10 December 2026</p>
+                    <p>
+                        Participate in coding competitions, technical workshops
+                        and innovative project exhibitions.
+                    </p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Cultural Fest</h3>
+                    <p class="date">15 December 2026</p>
+                    <p>
+                        Enjoy music, dance, drama and exciting cultural
+                        performances.
+                    </p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Sports Meet</h3>
+                    <p class="date">20 December 2026</p>
+                    <p>
+                        Showcase your sporting skills through various
+                        indoor and outdoor games.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ACTIVITIES SECTION -->
+        <section id="activities">
+
+            <h2>University Activities</h2>
+
+            <div class="event-container">
+
+                <article class="event-card">
+                    <h3>Technical Activities</h3>
+                    <p>Hackathons, coding contests and technical workshops.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Cultural Activities</h3>
+                    <p>Singing, dancing, art and drama competitions.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Sports Activities</h3>
+                    <p>Cricket, football, badminton and athletics.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ASIDE -->
+        <aside>
+            <h2>Important Information</h2>
+
+            <ul>
+                <li>Register before the event deadline.</li>
+                <li>Carry your university ID card.</li>
+                <li>Follow the event guidelines.</li>
+                <li>Participate actively and enjoy!</li>
+            </ul>
+        </aside>
+
+        <!-- REGISTRATION FORM -->
+        <section id="register">
+
+            <h2>Student Event Registration</h2>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name"
+                        placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="roll">University Roll Number:</label>
+                    <input type="text" id="roll" name="roll"
+                        placeholder="Enter your roll number" required>
+                </div>
+
+                <!-- DROPDOWN -->
+                <div class="form-group">
+                    <label for="branch">Select Department:</label>
+
+                    <select id="branch" name="branch" required>
+                        <option value="">Choose Department</option>
+                        <option value="CSE">Computer Science</option>
+                        <option value="ECE">Electronics</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="MECH">Mechanical</option>
+                    </select>
+                </div>
+
+                <!-- RADIO BUTTONS -->
+                <fieldset>
+                    <legend>Year of Study:</legend>
+
+                    <div class="choice">
+                        <input type="radio" id="first" name="year" value="First Year" required>
+                        <label for="first">First Year</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" id="second" name="year" value="Second Year">
+                        <label for="second">Second Year</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" id="third" name="year" value="Third Year">
+                        <label for="third">Third Year</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" id="fourth" name="year" value="Fourth Year">
+                        <label for="fourth">Fourth Year</label>
+                   
